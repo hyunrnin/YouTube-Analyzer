@@ -1,0 +1,24 @@
+# Python Bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# MacOS
+.DS_Store
+
+# Virtualenv
+venv/
+.env/
+
+# Environment Variables
+*.env
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
