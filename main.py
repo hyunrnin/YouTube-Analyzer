@@ -7,7 +7,6 @@ def main():
     
     print("[1] 영상 정보 수집 중...")
     try:
-        # 영상 정보 수집
         info = get_video_info(video_url)
         if info:
             print(f"제목: {info['title']}")
@@ -31,7 +30,6 @@ def main():
         print("\n[3] 감성 분석 중...")
         results = analyze_sentiments(comments)
 
-        # 분석 요약
         positive = sum(1 for _, sentiment, _ in results if sentiment == 'positive')
         neutral = sum(1 for _, sentiment, _ in results if sentiment == 'neutral')
         negative = sum(1 for _, sentiment, _ in results if sentiment == 'negative')
